@@ -15,7 +15,7 @@ const app = express();
 // Middleware
 // IMPORTANT: CORS must be configured this way to accept cookies from the frontend
 app.use(cors({
-  origin: ['http://localhost:5173', 'YOUR_NETLIFY_URL_GOES_HERE'], 
+  origin: ['http://localhost:5173', 'https://bernardina-student-crypo-app-project.netlify.app'], 
   credentials: true 
 }));
 app.use(express.json()); // Allows us to accept JSON data in the body
