@@ -12,6 +12,10 @@ dotenv.config();
 
 const app = express();
 
+app.get('/', (req, res) => {
+  res.json({ message: "Backend is running successfully!" });
+});
+
 // Middleware
 // IMPORTANT: CORS must be configured this way to accept cookies from the frontend
 app.use(cors({
